@@ -36,9 +36,9 @@ CAFFE_MODEL_LOCAL_PATH = ROOT / "./RFB-320/RFB-320.caffemodel"
 PROTOTXT_URL = "https://github.com/spmallick/learnopencv/raw/master/Facial-Emotion-Recognition/RFB-320/RFB-320.prototxt"  # noqa: E501
 PROTOTXT_LOCAL_PATH = ROOT / "./RFB-320/RFB-320.prototxt.txt"
 
-download_file(ONNX_MODEL_URL, ONNX_MODEL_LOCAL_PATH, expected_size=None)
-download_file(CAFFE_MODEL_URL, CAFFE_MODEL_LOCAL_PATH, expected_size=None)
-download_file(PROTOTXT_URL, PROTOTXT_LOCAL_PATH, expected_size=None)
+download_file(ONNX_MODEL_URL, ONNX_MODEL_LOCAL_PATH) #, expected_size=None)
+download_file(CAFFE_MODEL_URL, CAFFE_MODEL_LOCAL_PATH) #, expected_size=None)
+download_file(PROTOTXT_URL, PROTOTXT_LOCAL_PATH) #, expected_size=None)
 
 # Session-specific caching
 onnx_cache_key = "onnx_model"
