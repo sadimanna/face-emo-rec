@@ -1,5 +1,5 @@
 ---
-title: Face Emotion Recognition Hugging Face Spaces Demo with Streamlit
+title: Face Emotion Recognition Hugging Face Spaces Demo with Streamlit and OpenCV
 emoji: 🌍
 colorFrom: indigo
 colorTo: pink
