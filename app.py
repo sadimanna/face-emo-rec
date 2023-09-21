@@ -29,16 +29,16 @@ ROOT = HERE.parent
 
 logger = logging.getLogger(__name__)
 
-ONNX_MODEL_URL = "https://github.com/spmallick/learnopencv/raw/master/Face-Emotion-Recognition/emotion-ferplus-8.onnx"  # noqa: E501
+ONNX_MODEL_URL = "https://github.com/spmallick/learnopencv/raw/master/Facial-Emotion-Recognition/emotion-ferplus-8.onnx"  # noqa: E501
 ONNX_MODEL_LOCAL_PATH = ROOT / "./emotion-ferplus-8.onnx"
-CAFFE_MODEL_URL = "https://github.com/spmallick/learnopencv/raw/master/Face-Emotion-Recognition/RFB-320/RFB-320.caffemodel"  # noqa: E501
+CAFFE_MODEL_URL = "https://github.com/spmallick/learnopencv/raw/master/Facial-Emotion-Recognition/RFB-320/RFB-320.caffemodel"  # noqa: E501
 CAFFE_MODEL_LOCAL_PATH = ROOT / "./RFB-320/RFB-320.caffemodel"
 PROTOTXT_URL = "https://github.com/spmallick/learnopencv/raw/master/Facial-Emotion-Recognition/RFB-320/RFB-320.prototxt"  # noqa: E501
 PROTOTXT_LOCAL_PATH = ROOT / "./RFB-320/RFB-320.prototxt.txt"
 
-download_file(ONNX_MODEL_URL, ONNX_MODEL_LOCAL_PATH) #, expected_size=None)
-download_file(CAFFE_MODEL_URL, CAFFE_MODEL_LOCAL_PATH) #, expected_size=None)
-download_file(PROTOTXT_URL, PROTOTXT_LOCAL_PATH) #, expected_size=None)
+download_file(ONNX_MODEL_URL, ONNX_MODEL_LOCAL_PATH, expected_size=None)
+download_file(CAFFE_MODEL_URL, CAFFE_MODEL_LOCAL_PATH, expected_size=None)
+download_file(PROTOTXT_URL, PROTOTXT_LOCAL_PATH, expected_size=None)
 
 # Session-specific caching
 onnx_cache_key = "onnx_model"
