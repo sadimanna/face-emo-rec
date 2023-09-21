@@ -48,7 +48,9 @@ if onnx_cache_key in st.session_state and caffe_cache_key in st.session_state:
     model = st.session_state[onnx_cache_key]
     net = st.session_state[caffe_cache_key]
 else:
+    # emotion detection model
     model = cv2.dnn.readNetFromONNX(str(ONNX_MODEL_LOCAL_PATH))
+    # face detection model
     net = cv2.dnn.readNetFromCaffe(str(PROTOTXT_LOCAL_PATH), str(CAFFE_MODEL_LOCAL_PATH))
     st.session_state[onnx_cache_key] = model
     st.session_state[caffe_cache_key] = net
