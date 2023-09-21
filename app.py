@@ -286,7 +286,7 @@ def video_frame_callback(frame: av.VideoFrame) -> av.VideoFrame:
 
 if __name__ == "__main__":
     webrtc_ctx = webrtc_streamer(
-        key="object-detection",
+        key="face-emotion-recognition",
         mode=WebRtcMode.SENDRECV,
         rtc_configuration={
             "iceServers": get_ice_servers(),
